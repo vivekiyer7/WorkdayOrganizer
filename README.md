@@ -1,4 +1,6 @@
+
 # WorkdayOrganizer
+
 A simple calender App for Scheduling your Daily Work
 
 ## Table of Contents
@@ -20,7 +22,7 @@ Welcome to the WorkdayOrganizer App, your go-to solution for efficiently schedul
 
 ## Deployment
 
-1. Site is live at https://vivekiyer7.github.io/WorkdayOrganizer/
+1. Site is live at <https://vivekiyer7.github.io/WorkdayOrganizer/>
 
 To run the application locally, follow these steps:
 
