@@ -4,6 +4,7 @@ $(document).ready(function () {
 
   function generateTimeBlocks () {
     const container = $('.container')
+    // Create an array of work hours every 30 minutes from 9 AM to 5 PM
     const workHours = [
       '9 AM',
       '10 AM',
@@ -16,14 +17,14 @@ $(document).ready(function () {
       '5 PM'
     ]
 
-    // Get the current hour using Day.js
-    const currentHour = dayjs().hour()
-
     // Loop through work hours and create time blocks
     workHours.forEach((hour, index) => {
       const timeBlock = $('<div>').addClass('row time-block')
       const hourCol = $('<div>').addClass('col-md-1 hour').text(hour)
       const textAreaCol = $('<textarea>').addClass('col-md-10 description')
+
+      // Get the current hour using Day.js
+      const currentHour = dayjs().hour()
 
       // Set the background color based on past, present, or future
       if (index + 9 < currentHour) {
@@ -59,5 +60,6 @@ $(document).ready(function () {
     })
   }
 
+  //Call the generateTimeBlocks function
   generateTimeBlocks()
 })
